@@ -1,0 +1,55 @@
+/* INDEX.HTML */
+
+/* fonts body */
+
+h2,
+h1 {
+  font-family: Arial;
+  color: #809e8e;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p,
+body,
+a {
+  font-family: Arial;
+  color: aliceblue;
+}
+
+
+.wrapper {
+ background-color: #2d3a33;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column; /* This line ensures items stack vertically */
+  
+}
+
+.center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-element li {
+  font-size: larger;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+ 
+}
