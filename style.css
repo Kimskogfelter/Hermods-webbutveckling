@@ -13,32 +13,43 @@ h1 {
 }
 
 p,
-body,
-a {
+body
+ {
   font-family: Arial;
   color: aliceblue;
 }
 
-
+/* div around all the elements on the webpage */
 .wrapper {
  background-color: #2d3a33;
   padding: 10px;
   border-radius: 20px;
   display: flex;
-  flex-direction: column; /* This line ensures items stack vertically */
+  flex-direction: column; /* Makes the elements stack vertically */
   
 }
 
+/* centers the element in the middle of the webpage */
 .center-element {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* the presentation div */
+.presentation-div {
+  background-color: #2d3a33;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+/* makes the font for the presentation text larger */
 .center-element li {
   font-size: larger;
 }
 
+/* centers the image on the webpage */
 .img-wrapper {
   display: flex;
   justify-content: center;
@@ -47,9 +58,45 @@ a {
   width: 100%;
 }
 
-img {
+/* makes the presenation image smaller and round */
+#presentation-img {
   max-width: 30%;
   height: auto;
   border-radius: 50%;
  
 }
+
+/* favourite games div */
+.games-div {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* div around the games images */
+.games-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* makes the games images smaller */
+.games-img-wrapper img {
+  max-width: 30%;
+  height: auto;
+}
+
+/* makes the games text color black */
+.games-div p {
+  color: black;
+}
+
+/* makes the games lists smaller in width and centers them on the webpage */
+.games-div ol {
+
+  height: auto;
+  width: 70%;
+  margin: auto;
+}
+
