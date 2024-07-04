@@ -1,81 +1,71 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<title>Internets historia</title>
-</head>
-<body>
-<div class="wrapper">
-    <!-- header -->
-     <header>
-        <div>
-            <h1>Rubrik. Logotyp</h1>
-        </div>
-        <aside class="sidebar-top">
-            Eventuell extra info. Kontaktuppgifter?
-        </aside>
-     </header>
-     <!-- navigation menu -->
-     <nav>
-        <p>Navigeringsmenu</p>
-     </nav>
-    <!-- main content -->
-     <div class="main-content">
-    <!-- Internet history div -->
-    <div class="history-div">
-    <h1>Internets historia</h1>
-    <br>
-    <img class="rounded-corners" src="https://www.imano.se/wp-content/uploads/sites/297/2020/11/6-2.jpg" alt="colorfull picture with a globe and cables">
-    <br>
-<p>Internet startade år 1960 utav det Amerikanska försvaret för att de skulle kunna koppla ihop datorer i deras nätverk. 
-Internet för allmänheten skapades först år 1983. Internet har haft stort inflytande på människan när det kommer till att lära sig saker.
-Speciellt när det kommer till sökmotorn Google. Google grundades år 1998 utav Larry Page och Sergey Brin, två studenter vid Stanford University.
-<br>  </p>
-<p>Det är dock inte bara positiva saker som kommit iochmed att internet skapades. Påverkan på samhället och den enskilda individen har visats vara stor, speciellt sen sociala
-    medier exploderade i popularitet. I början var internet en plats där man skulle spara och dela viktig information med andra människor. Det utvecklades dock snabbt till att nli
-    något mycket mer. Idag används det dels till att spara och dela information mellan olika personer men även för att underhålla varandra. Sociala medier har exploderat 
-    de senaste åren och idag ser man appar som Instagram, Tiktok och Facebook hos många smartphone användare. Internet har även gått från att först bara kunna användas på en dator
-    till att kunna användas på mobiltelefoner vilket är den stora användaren i det moderna samhället.</p>
+  <head>
+    <title>Modul 2 - uppgift 2</title>
+    <meta charset = "UTF-8" />
+<!--Det är alltså stil.css som du ska skicka in som länkas till i kommande rad -->
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<!--Nedan följer en artikel ur studieguiden om CSS - artikeln har en tillhörande bild samt en informationsruta med en länk som tips för vidare läsning. 
 
-<br>
-</div>
-<!-- Society div -->
-<div class="society-div">
-<h2>Samhällspåverkan
-</h2>
-<br>
-<img class="rounded-corners" src="https://static.bonniernews.se/gcs/di-bilder-prod/mly/37690a38-6d0b-4dc5-9304-0c835b69849f.jpeg" alt="screenshot of a smartphone screen with apps">
-<br>
-<p >Internets påverkan på samhället började bra innan sociala medier tog fart. I början var det mest en platform för att kunna hålla kontakten
-    mellan olika personer och enkelt kunna skriva meddelande till varandra utan att behöva vänta 1-2 veckor på svar från ett brev på posten. Så sätt är internet en utmärkt del 
-    för att människor ska kunna hålla kontakten med varandra. Det mindre bra börjar när speciellt unga människor lätt kan dela sina privatliv med andra, fel sortens människor.
-    <br> Som ung har man inte samma konsekvenstänk över vad som kan hända om man tex laddar upp en bild på nätet. Den bilden kommer finnas där för all framtid, och vem som helst som har tillgång
-    till internet kommer kunna spara den bilden och använda den till vad som helst. <br>
-    
-</p>
-<p>
-    Det tragiska här är att många i det moderna samhället ser populära personer och vill bli lika kända, rika, populära eller vad det kan vara som de är. Många är också beredda att 
-    ta till drastiska åtgärder för att nå sitt mål. <br>
-    Man har på senare år tyvärr sett fler och fler självmord bland unga vilket är pga sociala medier. Unga kan lätt via Snapchat, Tiktok eller Instagram nå varandra och skriva elaka kommentarer
-    som till slut leder till tragiska händelser.
-    För att internet ska bli bättre tycker jag strängare regler gällande ålder ska sättas på just sociala medier. Vuxna ska enklare kunna ha koll på vad deras barn laddar upp för content, men även
-    se vad deras barn får för kommentarer. Det må låta strängt men tyvärr har ju statistiken visat på att många unga mår dåligt pga sociala medier, och de är dels för 
-    små för att förstå konsekvenserna utav deras handlande. 
-</p>
-<p>Detta handlar inte endast om de unga utav även om vuxna människor. Något måste ändras så alla oavsett ålder kan ha kul på internet och inte råka ut för mobbning. <br>
-    Frågan är bara hur man ska bära sig åt för att lyckas ordna detta problem utan att gå in på personnivå och utan att man bryter mot GDPR. </p>
+SOm ni kan se används lite taggar som har namn som section, header och article. Detta är namngiva div-taggar som är en nyhet i HTML5 för att kunna skapa mer semantiskt innehåll.. 
 
-</div>
-<aside class="sidebar-bottom">
-    <p>Sidebar. Mer info</p>
-</aside>
-</div>
-<footer>
-    <div>
-        <p>Footer</p>
-    </div>
-</footer>
-</div>
+Är det förvirrande så tänk att exempelvis att taggen section kan vara en div='avdelning' och article kan vara div="content" exempelvis.
+
+Så här ser denna layout ut:
+
+	header
+	article (som en content-wrapper)
+		section (ett blogginlägg)
+			header
+			img (bild)
+			p (brödtext)
+			footer
+		section
+			header
+			img (bild)
+			p (brödtext)
+			footer
+	aside
+	footer (med copyrighttext)
+	  
+
+För att specifikt styla h2 taggen som finns i article-taggen kan man i CSS skriva:
+article header h2 {stil}
+
+Man beskriver alltså ett träd och att ovanstående stil endast gäller h2-rubriker innanför en header tagg som i sin tur bara finns innanför en article tagg.
+
+ -->
+    <div id="wrapper">
+		<header><h1>Smakprov ur studieguiden för webbutveckling 2</h1></header>
+	<!-- Här kommer huvudinnehållet. Section kan ses som div='content' exempelvis -->
+		<article>
+			<section>
+				<header><h2>Om CSS</h2></header>
+				<p>Vad CSS kan användas till har vi lärt oss i föregående kurs men vi kommer arbeta vidare med stilmallar i denna studieguide eftersom det är ett sätt att styra utseendet 
+				på hemsidan som ska användas. Inga hemsidor görs idag utan att använda just stilmallar och allt eftersom nya versioner av CSS släpps så förbättras möjligheterna och utbudet av funktioner som erbjuds.</p> 
+				<p>Den senaste versionen av CSS är då CSS3 och för att vi fullt ut ska kunna utnyttja denna version ska vi alltså använda HTML5. Glöm dock inte att webbdesign utvecklas hela tiden och det som är sanning idag behöver inte vara sanning imorgon</p>
+				<p class="linktext">Här är en <a href="https://sv.wikipedia.org/wiki/Cascading_Style_Sheets"> artikel om CSS</a> på Wikipedia</p>
+				<footer>Skrivet av Oscar Antbring den 12 juni 2013</footer>		
+			</section>
+            <br>
+			<section>
+				<header><h2>Om märkspråk</h2></header>
+				<p>Märkspråk – eller markup language – är ett sätt att med hjälp av olika textkoder ge direktiv till ett program (i vårt fall då en webbläsare) hur ett dokument ska presenteras och vilka funktioner som ska finnas. Som vi kommer ihåg från första kursen så finns flera olika sådana textkoder att använda – eller taggar som vi ofta kallar dem för. Det kan vara en tagg för att berätta för webbläsaren att vi vill presentera en hyperlänk, eller att vi ska presentera en bild exempelvis. Naturligtvis måste webbläsaren veta vad de olika koderna – eller taggarna – betyder. Det är därför som olika märkspråk (och versioner) finns och från föregående kurs kommer vi ihåg HTML 4.01 samt XHTML. Vilket märkspråk som används ska vi specificera i dokumentet så att webbläsaren vet vilka taggar som kan användas och vad de betyder</p> 
+				<p>När vi skapar en hemsida så specificerar vi en så kallad DOCTYPE som beskriver vilket typ av dokument som webbläsaren kan förvänta sig.  Vi säger helt enkelt till webbläsaren – ”detta dokument är av typen HTML5, och då kan du förvänta dig dessa taggar och struktur”. Naturligtvis måste webbläsaren ha stöd för HTML5 så att programmet vet vad som ska göras med taggarna och deras egenskaper.Det är därför det är så viktigt att vi validerar koden så att vår kod stämmer överens med vad webbläsaren förväntar sig utifrån typen av dokument. Vi kommer återkomma till just validering av koden i sista modulen även om det redan tagits upp i första kursen – validera gärna kontinuerligt koden genom hela utvecklingsarbetet.</p>
+				<p class="linktext">Här är en <a href="https://sv.wikipedia.org/wiki/HTML5"> artikel om HTML5</a> på Wikipedia</p>
+				<footer>Skrivet av Oscar Antbring den 11 juni 2013</footer>		
+			</section>
+		</article>
+	<!-- Här kommer en sidokolumn. Denna bör ligga bredvid article alltså men får man det inte att fungera så går det ha den under också -->
+		<aside> 
+			<h1>Bildgalleri</h1>
+			<img src="images/html5.png " alt="html5">
+			<img src="images/css.png" alt="css3">
+		</aside>
+		<footer>&#169;Hermods</footer>
+	</div>
 </body>
 </html>

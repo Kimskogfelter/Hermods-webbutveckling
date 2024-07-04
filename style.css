@@ -5,7 +5,7 @@
 h2,
 h1 {
   font-family: Arial;
-  color: #ca204b;
+  color: #347950;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -16,11 +16,11 @@ p,
 body
  {
   font-family: Arial;
-  color: aliceblue;
+  color: rgb(3, 3, 3);
 }
 
 /* div around all the elements on the webpage */
-.wrapper {
+#wrapper {
  background-color: #000000;
   padding: 10px;
   border-radius: 20px;
@@ -29,54 +29,46 @@ body
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* Ensure.wrapper takes at least the full height of the viewport */
-
   
 }
 
-/* makes the images get rounded corners */
-.rounded-corners {
-  border-radius: 5%;
-  height: auto;
-  width: 50%;
-}
-
-/* the h2 for the society part */
-.history-div {
-  background-color: #000000;
-  padding: 10px;
-  border-radius: 20px;
-  width: 75%;
+/* makes the sections get next to eachother */
+article {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
- 
 }
 
 
-
-/* society div */
-.society-div {
+/* styling for sections */
+section {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 20px;
-  width: 90%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
  
 }
 
-/* makes the h2 for the society text light blue */
-.society-div h2 {
-  color: #47c7e7;
+/* styling for aside */
+aside {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  width: 100%; 
+  border: 20px #000000;
+ 
 }
 
-/* makes the society text color black */
-.society-div p {
-  color: black;
-  width: 75%;
+
+
+/* footer font color */
+footer {
+  color: white;
 }
 
 
