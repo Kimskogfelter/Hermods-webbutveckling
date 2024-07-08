@@ -5,7 +5,7 @@
 h2,
 h1 {
   font-family: Arial;
-  color: #347950;
+  color: #234e34;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ body
 
 /* div around all the elements on the webpage */
 #wrapper {
- background-color: #000000;
+ background-color: #5c7552;
   padding: 10px;
   border-radius: 20px;
   display: flex;
