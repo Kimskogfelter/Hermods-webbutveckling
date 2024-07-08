@@ -25,7 +25,7 @@ body
   padding: 10px;
   border-radius: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* Ensure.wrapper takes at least the full height of the viewport */
@@ -45,7 +45,7 @@ body
 article {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 75%;
 
@@ -59,6 +59,7 @@ section {
   border-radius: 20px;
   width: 75%;
   margin: 10px;
+  height: 500px;
  
 }
 
@@ -67,13 +68,14 @@ aside {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 20px;
-  margin: 20px;
-  width: 25%; 
-border: 20px #000000;
+  margin: 10px;
+  width: 73%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
  
 }
-
-
 
 /* footer font color */
 footer {
@@ -81,3 +83,16 @@ footer {
 }
 
 
+/* Media query: large or landscape phones (768px and down) */
+@media screen and (max-width: 768px) {
+  
+/* makes the sections go in separate columns, couldnt make this work tho */
+article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+}
